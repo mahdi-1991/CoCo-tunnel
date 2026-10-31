@@ -10,7 +10,7 @@ import (
 
 const (
 	// Version of the arange-tun engine.
-	Version = "v1.31.1"
+	Version = "v1.32.0"
 
 	// RepoOwner/RepoName identify the GitHub repository used by the installer
 	// and the release-based updater.

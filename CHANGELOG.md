@@ -2,7 +2,7 @@
 
 All notable changes to Arange-tun are documented here.
 
-## Unreleased
+## v1.32.0 — 2026-10-31
 
 **QUIC credential is bound to the TLS session.** The QUIC client does not verify
 the server certificate, so the bare token sent on the first stream could be read

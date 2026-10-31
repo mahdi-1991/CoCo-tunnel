@@ -1,0 +1,25 @@
+# Build artifacts
+/arange-tun
+/arange-tun.exe
+/dist/
+/release/
+*.exe
+*.test
+*.out
+
+# Go module cache accidentally copied into the project (must live outside it)
+/go/
+
+# Runtime state / local config
+/state/
+
+# Vendored deps are optional to commit; uncomment to keep the repo small.
+# /vendor/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+.idea/
+.vscode/

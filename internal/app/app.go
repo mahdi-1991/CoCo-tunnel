@@ -5,6 +5,7 @@ package app
 import (
 	"crypto/sha256"
 	"encoding/binary"
+	"os"
 )
 
 const (
@@ -22,9 +23,6 @@ const (
 	// BackupDir is the default folder for configuration backups.
 	BackupDir = InstallDir + "/backups"
 
-	// ConfigDir is where per-tunnel TOML configs and runtime state live.
-	ConfigDir = "/etc/arange-tun"
-
 	// ServiceDir is the systemd unit directory.
 	ServiceDir = "/etc/systemd/system"
 
@@ -34,14 +32,8 @@ const (
 	// BinPath is where the arange-tun binary is installed.
 	BinPath = "/usr/local/bin/arange-tun"
 
-	// TelegramConfig stores the telegram bot settings (JSON).
-	TelegramConfig = ConfigDir + "/telegram.json"
-
 	// AutoRefreshMarker is the cron comment tag for the global auto-refresh job.
 	AutoRefreshMarker = "arange-tun-auto-refresh"
-
-	// WebUIConfig stores the web panel settings (JSON).
-	WebUIConfig = ConfigDir + "/webui.json"
 
 	// WebUIService is the systemd unit that runs the web panel.
 	WebUIService = "arange-tun-webui.service"
@@ -61,10 +53,6 @@ const (
 	// SocksInternalPort is the localhost port the built-in SOCKS5 proxy listens
 	// on. It is reachable from a peer only when exposed over a tunnel.
 	SocksInternalPort = 1080
-
-	// InstallPathFile records where the source repo was cloned, so the updater
-	// and uninstaller can find it.
-	InstallPathFile = ConfigDir + "/install_path"
 )
 
 // ServiceName returns the systemd unit name for a tunnel by its short name.
@@ -97,4 +85,28 @@ func SocksPortForToken(token string) int {
 	// ephemeral range, so it neither collides with a well-known port nor gets
 	// handed out to an outgoing connection.
 	return 20000 + int(binary.BigEndian.Uint32(sum[:4])%20000)
+}
+
+// ConfigDir is where per-tunnel TOML configs and runtime state live. It is the
+// production directory unless ARANGE_TUN_CONFIG_DIR is set, which lets the test
+// suite (and a second instance) run without touching /etc or needing root.
+var ConfigDir = envOr("ARANGE_TUN_CONFIG_DIR", "/etc/arange-tun")
+
+var (
+	// TelegramConfig stores the telegram bot settings (JSON).
+	TelegramConfig = ConfigDir + "/telegram.json"
+
+	// WebUIConfig stores the web panel settings (JSON).
+	WebUIConfig = ConfigDir + "/webui.json"
+
+	// InstallPathFile records where the source repo was cloned, so the updater
+	// and uninstaller can find it.
+	InstallPathFile = ConfigDir + "/install_path"
+)
+
+func envOr(key, def string) string {
+	if v := os.Getenv(key); v != "" {
+		return v
+	}
+	return def
 }

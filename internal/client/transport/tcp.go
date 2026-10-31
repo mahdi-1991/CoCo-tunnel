@@ -2,6 +2,7 @@ package transport
 
 import (
 	"context"
+	"crypto/subtle"
 	"fmt"
 	"net"
 	"strings"
@@ -240,7 +241,7 @@ func (c *TcpTransport) channelDialer() {
 			// is not applicable here.
 			token, nonce, _ := decodeControlAck(message, ackSignal)
 
-			if token == c.config.Token {
+			if subtle.ConstantTimeCompare([]byte(token), []byte(c.config.Token)) == 1 {
 				// Before the control channel is published, so the pool
 				// connections poolMaintainer starts below already have it.
 				c.poolNonce.Set(nonce)

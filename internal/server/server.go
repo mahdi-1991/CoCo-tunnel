@@ -7,6 +7,7 @@ import (
 	"time"
 
 	"github.com/mahdi-1991/CoCo-tunnel/config"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/app"
 	"github.com/mahdi-1991/CoCo-tunnel/internal/server/transport"
 	"github.com/mahdi-1991/CoCo-tunnel/internal/utils"
 	"github.com/mahdi-1991/CoCo-tunnel/internal/utils/handlers"
@@ -20,7 +21,7 @@ import (
 // are kept. It must survive restarts: re-issuing works, but doing it repeatedly
 // runs into Let's Encrypt's rate limits, and then the tunnel has no
 // certificate at all until the limit resets.
-const acmeCacheDir = "/etc/arange-tun/acme"
+var acmeCacheDir = app.ConfigDir + "/acme"
 
 type Server struct {
 	config *config.ServerConfig

@@ -17,7 +17,7 @@ import (
 )
 
 // certDir is where auto-generated self-signed certificates live.
-const certDir = app.ConfigDir + "/certs"
+var certDir = app.ConfigDir + "/certs"
 
 // EnsureSelfSignedCert generates (or reuses) a self-signed certificate/key pair
 // for a tunnel, used by the wss/wssmux transports. host may be a domain or IP

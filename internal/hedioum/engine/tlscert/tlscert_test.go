@@ -51,7 +51,8 @@ func TestLoadOrCreate(t *testing.T) {
 
 func TestFingerprintDeterministic(t *testing.T) {
 	der := []byte("some-der-bytes")
-	if Fingerprint(der) != Fingerprint(der) {
+	first, second := Fingerprint(der), Fingerprint(der)
+	if first != second {
 		t.Fatal("fingerprint not deterministic")
 	}
 	if Fingerprint(der) == Fingerprint([]byte("other")) {

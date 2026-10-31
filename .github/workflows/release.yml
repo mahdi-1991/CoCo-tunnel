@@ -25,7 +25,9 @@ jobs:
       - name: Test before publishing
         # Nothing gets published that has not passed the suite. A broken
         # release is far more expensive to undo than a slow pipeline.
-        run: sudo env "PATH=$PATH" "GOCACHE=$(go env GOCACHE)" "GOMODCACHE=$(go env GOMODCACHE)" go test ./... -timeout 20m
+        env:
+          ARANGE_TUN_CONFIG_DIR: ${{ runner.temp }}/arange-tun
+        run: go test ./... -timeout 20m
 
       - name: Build release assets
         run: make release

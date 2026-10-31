@@ -47,6 +47,32 @@ jobs:
         run: go vet ./...
 
       - name: Test
-        # Run as root: the suite writes certificates and configs under
-        # /etc/arange-tun, the production config directory.
-        run: sudo env "PATH=$PATH" "GOCACHE=$(go env GOCACHE)" "GOMODCACHE=$(go env GOMODCACHE)" go test ./... -timeout 20m
+        env:
+          ARANGE_TUN_CONFIG_DIR: ${{ runner.temp }}/arange-tun
+        run: go test ./... -timeout 20m
+
+  analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+          cache: true
+
+      - name: Install libpcap headers
+        run: sudo apt-get update && sudo apt-get install -y libpcap-dev
+
+      - name: staticcheck
+        run: |
+          go install honnef.co/go/tools/cmd/staticcheck@latest
+          staticcheck ./...
+
+      - name: govulncheck
+        # Informational: a vulnerability in a dependency should be seen, but it
+        # is not a reason to fail every unrelated commit.
+        continue-on-error: true
+        run: |
+          go install golang.org/x/vuln/cmd/govulncheck@latest
+          govulncheck ./...

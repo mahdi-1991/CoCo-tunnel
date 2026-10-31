@@ -47,4 +47,6 @@ jobs:
         run: go vet ./...
 
       - name: Test
-        run: go test ./... -timeout 20m
+        # Run as root: the suite writes certificates and configs under
+        # /etc/arange-tun, the production config directory.
+        run: sudo env "PATH=$PATH" "GOCACHE=$(go env GOCACHE)" "GOMODCACHE=$(go env GOMODCACHE)" go test ./... -timeout 20m

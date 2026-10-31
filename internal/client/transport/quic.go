@@ -2,6 +2,7 @@ package transport
 
 import (
 	"context"
+	"crypto/subtle"
 	"fmt"
 	"net"
 	"strings"
@@ -200,8 +201,16 @@ func (c *QuicTransport) channelDialer() {
 			}
 			control := network.NewQUICStreamConn(stream, conn)
 
-			// Sending security token
-			if err := utils.SendBinaryTransportString(control, c.config.Token, utils.SG_Chan); err != nil {
+			// Sending the credential: a proof bound to this TLS session, never the
+			// bare token (see network.QUICProof).
+			proof, err := network.QUICProof(conn, c.config.Token, "client")
+			if err != nil {
+				c.logger.Errorf("failed to bind the credential to the session: %v", err)
+				_ = conn.CloseWithError(0, "binding failed")
+				bo.Wait(c.state.Ctx())
+				continue
+			}
+			if err := utils.SendBinaryTransportString(control, proof, utils.SG_Chan); err != nil {
 				c.logger.Errorf("failed to send security token: %v", err)
 				_ = conn.CloseWithError(0, "token send failed")
 				bo.Wait(c.state.Ctx())
@@ -234,7 +243,8 @@ func (c *QuicTransport) channelDialer() {
 
 			control.SetReadDeadline(time.Time{})
 
-			if message != c.config.Token {
+			serverProof, err := network.QUICProof(conn, c.config.Token, "server")
+			if err != nil || subtle.ConstantTimeCompare([]byte(message), []byte(serverProof)) != 1 {
 				c.logger.Errorf("invalid token received (does not match the server's token). Retrying...")
 				_ = conn.CloseWithError(0, "bad token")
 				bo.Wait(c.state.Ctx())
@@ -416,7 +426,13 @@ func (c *QuicTransport) tunnelDialer() {
 
 	// Announce the stream with the token so the server can authenticate it and
 	// file it as a data stream.
-	if err := utils.SendBinaryTransportString(data, c.config.Token, utils.SG_TCP); err != nil {
+	proof, err := network.QUICProof(qc, c.config.Token, "client")
+	if err != nil {
+		c.logger.Errorf("failed to bind the credential to the session: %v", err)
+		stream.Close()
+		return
+	}
+	if err := utils.SendBinaryTransportString(data, proof, utils.SG_TCP); err != nil {
 		c.logger.Errorf("failed to announce tunnel stream: %v", err)
 		stream.Close()
 		return

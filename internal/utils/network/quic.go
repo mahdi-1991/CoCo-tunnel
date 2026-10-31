@@ -4,10 +4,13 @@ import (
 	"context"
 	"crypto/ecdsa"
 	"crypto/elliptic"
+	"crypto/hmac"
 	"crypto/rand"
+	"crypto/sha256"
 	"crypto/tls"
 	"crypto/x509"
 	"crypto/x509/pkix"
+	"encoding/hex"
 	"fmt"
 	"math/big"
 	"net"
@@ -203,3 +206,34 @@ func NewQUICStreamConn(stream *quic.Stream, conn *quic.Conn) net.Conn {
 
 func (q *QUICStreamConn) LocalAddr() net.Addr  { return q.conn.LocalAddr() }
 func (q *QUICStreamConn) RemoteAddr() net.Addr { return q.conn.RemoteAddr() }
+
+// quicBindingLabel is the RFC 5705 exporter label for the QUIC credential
+// binding.
+const quicBindingLabel = "EXPORTER-arange-tun-quic-binding-v1"
+
+// QUICProof returns the credential a QUIC peer sends instead of the raw token:
+// HMAC-SHA256 keyed by the token over the role and the TLS session's exported
+// keying material.
+//
+// The QUIC client does not verify the server certificate (the tunnel trusts its
+// token, and the certificate is self-signed), so on its own that would let an
+// active man in the middle terminate the TLS, read the token off the first
+// stream and become the client. The keying material is unique to one TLS
+// session, so an interceptor holding two separate sessions cannot carry a proof
+// from one to the other, and never sees the token to forge a new one. The role
+// ("client" or "server") keeps a proof from being reflected back in the other
+// direction. This is the same scheme the WSS transport uses (wssbind.go).
+//
+// It fails closed: if the material cannot be exported there is no proof, and the
+// caller must drop the connection rather than fall back to the bare token.
+func QUICProof(conn *quic.Conn, token, role string) (string, error) {
+	cs := conn.ConnectionState().TLS
+	ekm, err := cs.ExportKeyingMaterial(quicBindingLabel, nil, 32)
+	if err != nil {
+		return "", fmt.Errorf("quic: export keying material: %w", err)
+	}
+	mac := hmac.New(sha256.New, []byte(token))
+	mac.Write([]byte(role))
+	mac.Write(ekm)
+	return hex.EncodeToString(mac.Sum(nil)), nil
+}

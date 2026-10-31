@@ -2,6 +2,7 @@ package transport
 
 import (
 	"context"
+	"crypto/subtle"
 	"fmt"
 	"net"
 	"runtime"
@@ -277,7 +278,10 @@ func (s *QuicTransport) acceptStream(g *quicGen, conn *quic.Conn, stream *quic.S
 	}
 	stream.SetReadDeadline(time.Time{})
 
-	if token != s.config.Token {
+	// The peer sends a proof bound to this connection's TLS session, not the
+	// token itself (see network.QUICProof).
+	want, err := network.QUICProof(conn, s.config.Token, "client")
+	if err != nil || subtle.ConstantTimeCompare([]byte(token), []byte(want)) != 1 {
 		s.logger.Warnf("invalid security token received from %s", conn.RemoteAddr())
 		stream.Close()
 		return
@@ -287,7 +291,13 @@ func (s *QuicTransport) acceptStream(g *quicGen, conn *quic.Conn, stream *quic.S
 	case utils.SG_Chan:
 		// The control stream. Answering with the token proves to the client that
 		// this server knows the secret too.
-		if err := utils.SendBinaryTransportString(wrapped, s.config.Token, utils.SG_Chan); err != nil {
+		reply, err := network.QUICProof(conn, s.config.Token, "server")
+		if err != nil {
+			s.logger.Errorf("failed to bind the credential to the session: %v", err)
+			stream.Close()
+			return
+		}
+		if err := utils.SendBinaryTransportString(wrapped, reply, utils.SG_Chan); err != nil {
 			s.logger.Errorf("failed to send security token: %v", err)
 			stream.Close()
 			return

@@ -2,6 +2,15 @@
 
 All notable changes to Arange-tun are documented here.
 
+## Unreleased
+
+**QUIC credential is bound to the TLS session.** The QUIC client does not verify
+the server certificate, so the bare token sent on the first stream could be read
+by an active man in the middle. Peers now exchange an HMAC of the token over the
+session's exported keying material (the scheme WSS already used), so the token
+is never sent. **This changes the QUIC wire format: update both ends of a QUIC
+tunnel together.** The tests no longer need root: set `ARANGE_TUN_CONFIG_DIR`.
+
 ## v1.31.1 — 2026-08-21
 
 **The advanced settings are collapsible drawers now.** The create-tunnel form's

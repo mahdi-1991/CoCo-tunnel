@@ -65,7 +65,9 @@ func telegramForwardTest(t *testing.T, transport string) {
 	pool := upstream.Client().Transport.(*http.Transport).TLSClientConfig.RootCAs
 	local := fmt.Sprintf("127.0.0.1:%d", exposed)
 	client := &http.Client{
-		Timeout: 20 * time.Second,
+		// Per attempt, well under tunnelReadyTimeout: a single attempt that hangs
+		// while the tunnel is still coming up must not use up the whole retry window.
+		Timeout: 5 * time.Second,
 		Transport: &http.Transport{
 			DialContext: func(ctx context.Context, network, addr string) (net.Conn, error) {
 				if addr == "api.telegram.org:443" {

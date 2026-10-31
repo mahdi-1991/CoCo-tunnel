@@ -6,8 +6,8 @@ import (
 	"io"
 	"net"
 
-	"github.com/mahdi-byte64/arange-tun/internal/metrics"
-	"github.com/mahdi-byte64/arange-tun/internal/web"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/metrics"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/web"
 	"github.com/sirupsen/logrus"
 )
 

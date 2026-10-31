@@ -7,7 +7,7 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/config"
+	"github.com/mahdi-1991/CoCo-tunnel/config"
 )
 
 // Picking up a changed configuration without being told to.

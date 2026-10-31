@@ -8,12 +8,12 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/config"
-	"github.com/mahdi-byte64/arange-tun/internal/metrics"
-	"github.com/mahdi-byte64/arange-tun/internal/utils"
-	"github.com/mahdi-byte64/arange-tun/internal/utils/handlers"
-	"github.com/mahdi-byte64/arange-tun/internal/utils/network"
-	"github.com/mahdi-byte64/arange-tun/internal/web"
+	"github.com/mahdi-1991/CoCo-tunnel/config"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/metrics"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/utils"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/utils/handlers"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/utils/network"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/web"
 	"github.com/xtaci/smux"
 
 	"github.com/gorilla/websocket"

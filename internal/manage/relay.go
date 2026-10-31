@@ -8,7 +8,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/mahdi-byte64/arange-tun/internal/app"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/app"
 )
 
 // EnsureSocksPort makes sure the given server tunnel exposes a port that maps

@@ -77,7 +77,7 @@ func Logo(version string) {
 ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝ ╚══════╝`)
 	fmt.Print(Reset)
 	fmt.Printf("%s Arange-tun  %s%s%s\n", Bold+White, Red, version, Reset)
-	fmt.Println(Gray + " GitHub : https://github.com/mahdi-byte64/Arange-tun" + Reset)
+	fmt.Println(Gray + " GitHub : https://github.com/mahdi-1991/CoCo-tunnel" + Reset)
 	fmt.Println(Gray + " Donate (BTC): bc1qn7fp90l9yr8krhyenxddujqvmlmfzpjx4m3tty" + Reset)
 }
 

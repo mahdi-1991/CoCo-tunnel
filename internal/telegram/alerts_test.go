@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/internal/sysstat"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/sysstat"
 )
 
 // The value of an alert system is entirely in when it stays quiet. These tests

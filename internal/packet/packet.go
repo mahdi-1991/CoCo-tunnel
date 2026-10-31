@@ -23,15 +23,15 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/mahdi-byte64/arange-tun/config"
-	"github.com/mahdi-byte64/arange-tun/internal/metrics"
-	"github.com/mahdi-byte64/arange-tun/internal/packet/engine/client"
-	"github.com/mahdi-byte64/arange-tun/internal/packet/engine/conf"
-	"github.com/mahdi-byte64/arange-tun/internal/packet/engine/flog"
-	"github.com/mahdi-byte64/arange-tun/internal/packet/engine/forward"
-	"github.com/mahdi-byte64/arange-tun/internal/packet/engine/pkg/buffer"
-	"github.com/mahdi-byte64/arange-tun/internal/packet/engine/server"
-	"github.com/mahdi-byte64/arange-tun/internal/packet/engine/socks"
+	"github.com/mahdi-1991/CoCo-tunnel/config"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/metrics"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/packet/engine/client"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/packet/engine/conf"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/packet/engine/flog"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/packet/engine/forward"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/packet/engine/pkg/buffer"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/packet/engine/server"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/packet/engine/socks"
 )
 
 // RunServer runs the abroad exit node until ctx ends.

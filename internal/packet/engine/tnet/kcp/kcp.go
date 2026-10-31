@@ -1,7 +1,7 @@
 package kcp
 
 import (
-	"github.com/mahdi-byte64/arange-tun/internal/packet/engine/conf"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/packet/engine/conf"
 
 	"github.com/xtaci/kcp-go/v5"
 	"github.com/xtaci/smux"

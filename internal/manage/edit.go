@@ -9,8 +9,8 @@ import (
 	"time"
 
 	"github.com/BurntSushi/toml"
-	"github.com/mahdi-byte64/arange-tun/config"
-	"github.com/mahdi-byte64/arange-tun/internal/app"
+	"github.com/mahdi-1991/CoCo-tunnel/config"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/app"
 )
 
 // loadServerSpec reconstructs a server tunnel's spec from its config file so it

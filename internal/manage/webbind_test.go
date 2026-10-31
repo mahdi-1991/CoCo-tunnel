@@ -6,7 +6,7 @@ import (
 
 	"github.com/BurntSushi/toml"
 
-	"github.com/mahdi-byte64/arange-tun/config"
+	"github.com/mahdi-1991/CoCo-tunnel/config"
 )
 
 // The knob has to survive the CLI, or it does not exist. Editing a tunnel

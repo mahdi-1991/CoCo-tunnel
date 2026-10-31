@@ -5,7 +5,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/internal/hedioum/engine/securestream"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/hedioum/engine/securestream"
 )
 
 // SSHMimic disguises the tunnel as SSH: an SSH-2.0 banner exchange followed by

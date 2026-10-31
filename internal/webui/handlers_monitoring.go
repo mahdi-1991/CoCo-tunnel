@@ -5,9 +5,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/internal/alerthist"
-	"github.com/mahdi-byte64/arange-tun/internal/manage"
-	"github.com/mahdi-byte64/arange-tun/internal/tunhist"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/alerthist"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/manage"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/tunhist"
 )
 
 // The read-only monitoring endpoints: health checks, alert history and the

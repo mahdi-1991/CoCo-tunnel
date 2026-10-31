@@ -13,11 +13,11 @@ import (
 	"time"
 
 	"github.com/hashicorp/yamux"
-	"github.com/mahdi-byte64/arange-tun/internal/hedioum/engine/config"
-	"github.com/mahdi-byte64/arange-tun/internal/hedioum/engine/mimic"
-	"github.com/mahdi-byte64/arange-tun/internal/hedioum/engine/securestream"
-	"github.com/mahdi-byte64/arange-tun/internal/hedioum/engine/tlscert"
-	"github.com/mahdi-byte64/arange-tun/internal/hedioum/engine/tunproto"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/hedioum/engine/config"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/hedioum/engine/mimic"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/hedioum/engine/securestream"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/hedioum/engine/tlscert"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/hedioum/engine/tunproto"
 )
 
 const (

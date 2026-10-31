@@ -5,8 +5,8 @@ import (
 	"testing"
 
 	"github.com/BurntSushi/toml"
-	"github.com/mahdi-byte64/arange-tun/config"
-	"github.com/mahdi-byte64/arange-tun/internal/utils/network"
+	"github.com/mahdi-1991/CoCo-tunnel/config"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/utils/network"
 )
 
 // A spoof tunnel's spec must render the spoof_* keys, and a rendered config must

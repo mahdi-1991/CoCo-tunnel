@@ -3,7 +3,7 @@ package webui
 import (
 	"testing"
 
-	"github.com/mahdi-byte64/arange-tun/internal/geo"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/geo"
 )
 
 // The geo providers disagree about which halves of a location they return:

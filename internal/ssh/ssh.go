@@ -18,9 +18,9 @@ import (
 	"github.com/sirupsen/logrus"
 	"golang.org/x/crypto/ssh"
 
-	"github.com/mahdi-byte64/arange-tun/config"
-	"github.com/mahdi-byte64/arange-tun/internal/metrics"
-	"github.com/mahdi-byte64/arange-tun/internal/socksproxy"
+	"github.com/mahdi-1991/CoCo-tunnel/config"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/metrics"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/socksproxy"
 )
 
 // RunClient keeps an SSH connection up and serves a SOCKS5 proxy through it

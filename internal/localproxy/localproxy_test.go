@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/internal/socks"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/socks"
 )
 
 // startEcho is a TCP service that echoes what it receives — the destination

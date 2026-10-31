@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/mahdi-byte64/arange-tun/internal/tui"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/tui"
 )
 
 // LinkTest measures the link to the far server and recommends a transport for

@@ -8,8 +8,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/internal/hedioum/engine/securestream"
-	"github.com/mahdi-byte64/arange-tun/internal/hedioum/engine/tlscert"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/hedioum/engine/securestream"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/hedioum/engine/tlscert"
 )
 
 func newTLSServer(t *testing.T, token string) (*TLSMimic, net.Listener) {

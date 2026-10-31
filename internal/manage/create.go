@@ -5,9 +5,9 @@ import (
 	"net"
 	"strings"
 
-	"github.com/mahdi-byte64/arange-tun/internal/app"
-	"github.com/mahdi-byte64/arange-tun/internal/optimize"
-	"github.com/mahdi-byte64/arange-tun/internal/utils/network"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/app"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/optimize"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/utils/network"
 )
 
 // TunnelRequest is a non-interactive description of a tunnel to create. It is

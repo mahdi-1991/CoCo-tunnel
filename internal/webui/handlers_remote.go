@@ -3,7 +3,7 @@ package webui
 import (
 	"net/http"
 
-	"github.com/mahdi-byte64/arange-tun/internal/manage"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/manage"
 )
 
 // handleRemoteToken manages this panel's own read-only token.

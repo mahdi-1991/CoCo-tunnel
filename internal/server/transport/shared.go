@@ -9,7 +9,7 @@ import (
 
 	"github.com/gorilla/websocket"
 
-	"github.com/mahdi-byte64/arange-tun/internal/utils/network"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/utils/network"
 )
 
 // isTunnelRequest reports whether a request is a genuine tunnel connection —

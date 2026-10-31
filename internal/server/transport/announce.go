@@ -5,8 +5,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/internal/utils"
-	"github.com/mahdi-byte64/arange-tun/internal/utils/network"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/utils"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/utils/network"
 )
 
 // Reading a connection's announcement off the accept path.

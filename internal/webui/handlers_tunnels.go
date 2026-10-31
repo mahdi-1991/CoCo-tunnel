@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/mahdi-byte64/arange-tun/internal/app"
-	"github.com/mahdi-byte64/arange-tun/internal/manage"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/app"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/manage"
 )
 
 // Tunnel lifecycle endpoints: create, delete and restart. These are the first

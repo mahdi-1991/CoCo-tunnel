@@ -5,9 +5,9 @@ import (
 	"testing"
 
 	"github.com/hashicorp/yamux"
-	"github.com/mahdi-byte64/arange-tun/internal/hedioum/engine/config"
-	"github.com/mahdi-byte64/arange-tun/internal/hedioum/engine/mimic"
-	"github.com/mahdi-byte64/arange-tun/internal/hedioum/engine/securestream"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/hedioum/engine/config"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/hedioum/engine/mimic"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/hedioum/engine/securestream"
 )
 
 // TestClientMimicForTypes locks the endpoint-type → client-mimic mapping, including

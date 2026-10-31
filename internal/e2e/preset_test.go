@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/config"
-	"github.com/mahdi-byte64/arange-tun/internal/client"
-	"github.com/mahdi-byte64/arange-tun/internal/manage"
-	"github.com/mahdi-byte64/arange-tun/internal/server"
+	"github.com/mahdi-1991/CoCo-tunnel/config"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/client"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/manage"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/server"
 )
 
 // kcpFromSpec mirrors the preset's KCP knobs into an engine config.

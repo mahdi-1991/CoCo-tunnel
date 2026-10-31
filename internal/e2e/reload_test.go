@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/cmd"
+	"github.com/mahdi-1991/CoCo-tunnel/cmd"
 )
 
 // Editing a tunnel's configuration file has to take effect on its own.

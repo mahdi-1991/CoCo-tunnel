@@ -54,7 +54,7 @@ end user ──▶ forwarded port (Iran server) ──[ one transport ]──▶
 </div>
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/mahdi-byte64/Arange-tun/main/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/mahdi-1991/CoCo-tunnel/main/install.sh)
 ```
 
 <div dir="rtl">
@@ -454,6 +454,6 @@ go test ./...                            # اجرای تست‌ها (تست‌ه
 
 ## تماس
 
-گیت‌هاب: **[mahdi-byte64](https://github.com/mahdi-byte64)** — روی ریپازیتوری issue باز کن.
+گیت‌هاب: **[mahdi-1991](https://github.com/mahdi-1991)** — روی ریپازیتوری issue باز کن.
 
 </div>

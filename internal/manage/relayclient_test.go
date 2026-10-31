@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/mahdi-byte64/arange-tun/internal/app"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/app"
 )
 
 // The updater reaches GitHub either directly or through the tunnel relay. On an

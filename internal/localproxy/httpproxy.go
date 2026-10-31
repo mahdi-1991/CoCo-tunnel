@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/internal/socks"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/socks"
 )
 
 // A minimal HTTP proxy: CONNECT for HTTPS (and any TCP the client tunnels

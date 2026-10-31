@@ -15,9 +15,9 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/mahdi-byte64/arange-tun/internal/app"
-	"github.com/mahdi-byte64/arange-tun/internal/socks"
-	"github.com/mahdi-byte64/arange-tun/internal/utils"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/app"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/socks"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/utils"
 )
 
 // Kind is which proxy protocol to serve on the port.

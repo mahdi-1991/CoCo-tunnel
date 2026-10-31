@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/internal/app"
-	"github.com/mahdi-byte64/arange-tun/internal/schedule"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/app"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/schedule"
 )
 
 // backupMetaName is a synthetic entry stored inside the archive (not written to

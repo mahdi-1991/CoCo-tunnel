@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/mahdi-byte64/arange-tun/internal/manage"
-	"github.com/mahdi-byte64/arange-tun/internal/tui"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/manage"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/tui"
 )
 
 // directTunnelMenu creates the "direct" tunnels — the ones where the Iran side

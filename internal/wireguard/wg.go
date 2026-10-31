@@ -23,9 +23,9 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/mahdi-byte64/arange-tun/config"
-	"github.com/mahdi-byte64/arange-tun/internal/metrics"
-	"github.com/mahdi-byte64/arange-tun/internal/socksproxy"
+	"github.com/mahdi-1991/CoCo-tunnel/config"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/metrics"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/socksproxy"
 
 	"github.com/sirupsen/logrus"
 	// The userspace client runs on AmneziaWG-go, a drop-in fork of wireguard-go:

@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/mahdi-byte64/arange-tun/internal/packet/engine/conf"
-	"github.com/mahdi-byte64/arange-tun/internal/packet/engine/tnet"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/packet/engine/conf"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/packet/engine/tnet"
 )
 
 type PType = byte

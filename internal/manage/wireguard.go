@@ -11,9 +11,9 @@ import (
 	"os"
 	"strings"
 
-	"github.com/mahdi-byte64/arange-tun/config"
-	"github.com/mahdi-byte64/arange-tun/internal/app"
-	"github.com/mahdi-byte64/arange-tun/internal/wireguard"
+	"github.com/mahdi-1991/CoCo-tunnel/config"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/app"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/wireguard"
 )
 
 // CreateWireGuardServer generates a WireGuard exit node listening on listenPort,

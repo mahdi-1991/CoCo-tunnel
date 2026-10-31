@@ -6,20 +6,20 @@ import (
 	"strings"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/internal/metrics"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/metrics"
 
-	"github.com/mahdi-byte64/arange-tun/config"
-	"github.com/mahdi-byte64/arange-tun/internal/client"
-	"github.com/mahdi-byte64/arange-tun/internal/frp"
-	"github.com/mahdi-byte64/arange-tun/internal/hedioum"
-	"github.com/mahdi-byte64/arange-tun/internal/packet"
-	"github.com/mahdi-byte64/arange-tun/internal/rathole"
-	sshtunnel "github.com/mahdi-byte64/arange-tun/internal/ssh"
-	"github.com/mahdi-byte64/arange-tun/internal/wireguard"
+	"github.com/mahdi-1991/CoCo-tunnel/config"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/client"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/frp"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/hedioum"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/packet"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/rathole"
+	sshtunnel "github.com/mahdi-1991/CoCo-tunnel/internal/ssh"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/wireguard"
 
-	"github.com/mahdi-byte64/arange-tun/internal/server"
-	"github.com/mahdi-byte64/arange-tun/internal/utils"
-	"github.com/mahdi-byte64/arange-tun/internal/utils/handlers"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/server"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/utils"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/utils/handlers"
 
 	"github.com/BurntSushi/toml"
 )

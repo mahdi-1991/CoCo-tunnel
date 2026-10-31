@@ -1,4 +1,4 @@
-module github.com/mahdi-byte64/arange-tun
+module github.com/mahdi-1991/CoCo-tunnel
 
 go 1.24.4
 

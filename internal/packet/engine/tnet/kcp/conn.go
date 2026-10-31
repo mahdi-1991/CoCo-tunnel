@@ -8,9 +8,9 @@ import (
 	"github.com/xtaci/kcp-go/v5"
 	"github.com/xtaci/smux"
 
-	"github.com/mahdi-byte64/arange-tun/internal/packet/engine/protocol"
-	"github.com/mahdi-byte64/arange-tun/internal/packet/engine/socket"
-	"github.com/mahdi-byte64/arange-tun/internal/packet/engine/tnet"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/packet/engine/protocol"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/packet/engine/socket"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/packet/engine/tnet"
 )
 
 type Conn struct {

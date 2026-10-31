@@ -3,7 +3,7 @@ package webui
 import (
 	"testing"
 
-	"github.com/mahdi-byte64/arange-tun/internal/localproxy"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/localproxy"
 )
 
 // The built-in proxy is off by default, and a panel field for something nobody

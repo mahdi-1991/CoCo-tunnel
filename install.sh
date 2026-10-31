@@ -2,7 +2,7 @@
 #
 # Arange-tun installer — one command on the VPS (as root):
 #
-#   bash <(curl -fsSL https://raw.githubusercontent.com/mahdi-byte64/Arange-tun/main/install.sh)
+#   bash <(curl -fsSL https://raw.githubusercontent.com/mahdi-1991/CoCo-tunnel/main/install.sh)
 #
 # It builds Arange-tun from source: if run inside a source checkout it builds
 # that; otherwise it downloads the current source from GitHub into
@@ -20,7 +20,7 @@ info() { echo -e "${WHITE}[*]${NC} $*"; }
 warn() { echo -e "${GRAY}[!]${NC} $*"; }
 err()  { echo -e "${RED}[x]${NC} $*" >&2; }
 
-REPO="mahdi-byte64/Arange-tun"
+REPO="mahdi-1991/CoCo-tunnel"
 BRANCH="main"
 BIN_PATH="/usr/local/bin/arange-tun"
 INSTALL_DIR="/root/Arange-tun"

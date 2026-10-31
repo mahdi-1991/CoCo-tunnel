@@ -5,10 +5,10 @@ import (
 	"net"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/internal/packet/engine/flog"
-	"github.com/mahdi-byte64/arange-tun/internal/packet/engine/pkg/buffer"
-	"github.com/mahdi-byte64/arange-tun/internal/packet/engine/protocol"
-	"github.com/mahdi-byte64/arange-tun/internal/packet/engine/tnet"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/packet/engine/flog"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/packet/engine/pkg/buffer"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/packet/engine/protocol"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/packet/engine/tnet"
 )
 
 func (s *Server) handleTCPProtocol(ctx context.Context, strm tnet.Strm, p *protocol.Proto) {

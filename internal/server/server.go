@@ -6,12 +6,12 @@ import (
 	_ "net/http/pprof"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/config"
-	"github.com/mahdi-byte64/arange-tun/internal/server/transport"
-	"github.com/mahdi-byte64/arange-tun/internal/utils"
-	"github.com/mahdi-byte64/arange-tun/internal/utils/handlers"
-	"github.com/mahdi-byte64/arange-tun/internal/utils/network"
-	"github.com/mahdi-byte64/arange-tun/internal/web"
+	"github.com/mahdi-1991/CoCo-tunnel/config"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/server/transport"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/utils"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/utils/handlers"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/utils/network"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/web"
 
 	"github.com/sirupsen/logrus"
 )

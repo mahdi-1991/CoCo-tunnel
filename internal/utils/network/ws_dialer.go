@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/gorilla/websocket"
-	"github.com/mahdi-byte64/arange-tun/config"
+	"github.com/mahdi-1991/CoCo-tunnel/config"
 )
 
 func WebSocketDialer(ctx context.Context, out *Outbound, addr string, edgeIP string, path string, timeout time.Duration, keepalive time.Duration, nodelay bool, token string, mode config.TransportType, simpleAuth bool, retry int, SO_RCVBUF int, SO_SNDBUF int, mss int) (*websocket.Conn, error) {

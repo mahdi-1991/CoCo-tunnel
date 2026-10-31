@@ -10,7 +10,7 @@ import (
 	"time"
 
 	"github.com/hashicorp/yamux"
-	"github.com/mahdi-byte64/arange-tun/internal/hedioum/engine/config"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/hedioum/engine/config"
 )
 
 const (

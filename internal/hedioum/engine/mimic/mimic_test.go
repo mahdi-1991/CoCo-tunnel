@@ -8,7 +8,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/internal/hedioum/engine/securestream"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/hedioum/engine/securestream"
 )
 
 // TestSSHMimicInterfaceRoundTrip drives the SSH mimic through the ServerMimic /

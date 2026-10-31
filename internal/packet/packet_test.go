@@ -3,7 +3,7 @@ package packet
 import (
 	"testing"
 
-	"github.com/mahdi-byte64/arange-tun/config"
+	"github.com/mahdi-1991/CoCo-tunnel/config"
 )
 
 // explicit network params so the tests never touch auto-detection (no default

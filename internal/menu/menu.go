@@ -11,14 +11,14 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/internal/app"
-	"github.com/mahdi-byte64/arange-tun/internal/localproxy"
-	"github.com/mahdi-byte64/arange-tun/internal/manage"
-	"github.com/mahdi-byte64/arange-tun/internal/optimize"
-	"github.com/mahdi-byte64/arange-tun/internal/schedule"
-	"github.com/mahdi-byte64/arange-tun/internal/telegram"
-	"github.com/mahdi-byte64/arange-tun/internal/tui"
-	"github.com/mahdi-byte64/arange-tun/internal/webui"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/app"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/localproxy"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/manage"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/optimize"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/schedule"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/telegram"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/tui"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/webui"
 )
 
 // ipStore caches the server's public IPv4 so menus never block on a lookup.

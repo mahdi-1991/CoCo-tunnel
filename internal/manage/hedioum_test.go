@@ -6,7 +6,7 @@ import (
 
 	"github.com/BurntSushi/toml"
 
-	"github.com/mahdi-byte64/arange-tun/config"
+	"github.com/mahdi-1991/CoCo-tunnel/config"
 )
 
 // The rendered [hedioum] TOML must parse back into the config the engine reads,

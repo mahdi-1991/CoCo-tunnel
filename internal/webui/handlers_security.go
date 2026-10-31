@@ -8,8 +8,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/internal/manage"
-	"github.com/mahdi-byte64/arange-tun/internal/telegram"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/manage"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/telegram"
 )
 
 // --- login rate limiting -----------------------------------------------------

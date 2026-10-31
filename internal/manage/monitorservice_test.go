@@ -5,7 +5,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/mahdi-byte64/arange-tun/internal/app"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/app"
 )
 
 // TestMonitorUnitContents checks the generated unit, because a unit file that

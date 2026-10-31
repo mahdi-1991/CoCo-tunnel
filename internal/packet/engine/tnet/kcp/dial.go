@@ -7,9 +7,9 @@ import (
 	"github.com/xtaci/kcp-go/v5"
 	"github.com/xtaci/smux"
 
-	"github.com/mahdi-byte64/arange-tun/internal/packet/engine/conf"
-	"github.com/mahdi-byte64/arange-tun/internal/packet/engine/socket"
-	"github.com/mahdi-byte64/arange-tun/internal/packet/engine/tnet"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/packet/engine/conf"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/packet/engine/socket"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/packet/engine/tnet"
 )
 
 func Dial(addr *net.UDPAddr, cfg *conf.KCP, netCfg conf.Network) (tnet.Conn, error) {

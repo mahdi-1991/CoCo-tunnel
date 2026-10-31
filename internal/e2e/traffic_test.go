@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/internal/metrics"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/metrics"
 )
 
 // Only KCP ever reported traffic, because kcp-go happens to keep its own byte

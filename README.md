@@ -50,7 +50,7 @@ installs Go and the build prerequisites automatically, compiles the binary, and
 opens the menu.
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/mahdi-byte64/Arange-tun/main/install.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/mahdi-1991/CoCo-tunnel/main/install.sh)
 ```
 
 Reopen the menu any time with:
@@ -396,4 +396,4 @@ Released under the **GNU Affero General Public License v3.0 (AGPL-3.0)** — see
 vendored **with the author's permission** and with attribution — see
 [`internal/hedioum/engine/NOTICE.md`](internal/hedioum/engine/NOTICE.md).
 
-**GitHub:** [mahdi-byte64](https://github.com/mahdi-byte64) — open an issue on the repository.
+**GitHub:** [mahdi-1991](https://github.com/mahdi-1991) — open an issue on the repository.

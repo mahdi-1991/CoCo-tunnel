@@ -3,7 +3,7 @@ package hedioum
 import (
 	"testing"
 
-	appconfig "github.com/mahdi-byte64/arange-tun/config"
+	appconfig "github.com/mahdi-1991/CoCo-tunnel/config"
 )
 
 // The foreign adapter must translate our section into the engine's foreign

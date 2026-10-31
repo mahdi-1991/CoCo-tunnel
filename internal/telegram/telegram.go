@@ -16,12 +16,12 @@ import (
 	"strings"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/internal/app"
-	"github.com/mahdi-byte64/arange-tun/internal/geo"
-	"github.com/mahdi-byte64/arange-tun/internal/manage"
-	"github.com/mahdi-byte64/arange-tun/internal/metrics"
-	"github.com/mahdi-byte64/arange-tun/internal/schedule"
-	"github.com/mahdi-byte64/arange-tun/internal/sysstat"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/app"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/geo"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/manage"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/metrics"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/schedule"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/sysstat"
 )
 
 // menuKeyboard is the inline-button keyboard attached to bot messages. Two
@@ -631,7 +631,7 @@ func webUIText() string {
 }
 
 func supportText() string {
-	return "GitHub : https://github.com/mahdi-byte64"
+	return "GitHub : https://github.com/mahdi-1991"
 }
 
 func sleepCtx(ctx context.Context, d time.Duration) {

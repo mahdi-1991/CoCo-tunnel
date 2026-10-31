@@ -3,8 +3,8 @@ package manage
 import (
 	"fmt"
 
-	"github.com/mahdi-byte64/arange-tun/internal/tui"
-	"github.com/mahdi-byte64/arange-tun/internal/utils/network"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/tui"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/utils/network"
 )
 
 // ExitHealth scores every server address a client tunnel can use and ranks them,

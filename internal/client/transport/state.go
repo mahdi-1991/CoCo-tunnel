@@ -6,7 +6,7 @@ import (
 	"sync"
 
 	"github.com/gorilla/websocket"
-	"github.com/mahdi-byte64/arange-tun/internal/web"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/web"
 )
 
 // A client transport rebuilds its state on every reconnect: Restart() swaps the

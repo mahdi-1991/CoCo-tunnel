@@ -13,7 +13,7 @@ and self-updater are not).
 Changes made while vendoring:
 - The Go module path was rewritten from
   `github.com/hedioum/Hedioum-Pool-Tunnel/...` to
-  `github.com/mahdi-byte64/arange-tun/internal/hedioum/engine/...`, flattening the
+  `github.com/mahdi-1991/CoCo-tunnel/internal/hedioum/engine/...`, flattening the
   upstream `internal/` packages directly under `engine/`.
 - The engine is driven by Arange-tun's own config and run under its per-tunnel
   systemd service, through the adapter in `internal/hedioum/` — rather than the

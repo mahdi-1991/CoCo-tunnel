@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/internal/hedioum/engine/securestream"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/hedioum/engine/securestream"
 )
 
 // runAuth drives client+server auth over a pipe with the given tokens/fingerprints.

@@ -8,14 +8,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/config"
-	"github.com/mahdi-byte64/arange-tun/internal/app"
-	"github.com/mahdi-byte64/arange-tun/internal/geo"
-	"github.com/mahdi-byte64/arange-tun/internal/localproxy"
-	"github.com/mahdi-byte64/arange-tun/internal/manage"
-	"github.com/mahdi-byte64/arange-tun/internal/metrics"
-	"github.com/mahdi-byte64/arange-tun/internal/sysstat"
-	"github.com/mahdi-byte64/arange-tun/internal/utils/network"
+	"github.com/mahdi-1991/CoCo-tunnel/config"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/app"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/geo"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/localproxy"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/manage"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/metrics"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/sysstat"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/utils/network"
 	psnet "github.com/shirou/gopsutil/v4/net"
 )
 

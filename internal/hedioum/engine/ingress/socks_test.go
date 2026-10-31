@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/internal/hedioum/engine/tunproto"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/hedioum/engine/tunproto"
 )
 
 // feedSocks writes a full SOCKS5 greeting + request to the client side of a pipe

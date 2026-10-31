@@ -1,6 +1,6 @@
 package network
 
-import "github.com/mahdi-byte64/arange-tun/config"
+import "github.com/mahdi-1991/CoCo-tunnel/config"
 
 // SpoofDPIFromConfig maps the flat spoof_* obfuscation knobs of a SpoofConfig
 // onto the carrier's SpoofDPI struct. It lives in the network package (which

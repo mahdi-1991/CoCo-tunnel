@@ -1060,7 +1060,7 @@
     <!-- The star count is fetched from GitHub by the browser, cached, and simply
          left off when it cannot be had — the link still works on a machine with
          no internet, which is where a lot of these panels live. -->
-    <a class="menuitem" id="ghlink" role="menuitem" href="https://github.com/mahdi-byte64/Arange-tun" target="_blank" rel="noopener">
+    <a class="menuitem" id="ghlink" role="menuitem" href="https://github.com/mahdi-1991/CoCo-tunnel" target="_blank" rel="noopener">
       <svg class="ic" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 00-1-2.6c3-.3 6.5-1.5 6.5-7A5.4 5.4 0 0020 4.8 5 5 0 0019.9 1S18.7.6 16 2.5a13.4 13.4 0 00-7 0C6.3.6 5.1 1 5.1 1A5 5 0 005 4.8 5.4 5.4 0 003.5 8.5c0 5.5 3.5 6.7 6.5 7a3.4 3.4 0 00-1 2.6V22"/></svg>
       <span class="lbl">GitHub</span>
       <span class="ghstars" id="ghstars" style="display:none">
@@ -1418,7 +1418,7 @@
     <h3 id="suptitle" data-i18n>Support Arange-tun</h3>
     <p data-i18n>Free & open-source. If it helps you, a star on GitHub means a lot. 🙏</p>
     <div class="actions" style="margin-bottom:16px">
-      <button class="btn-primary" onclick="window.open('https://github.com/mahdi-byte64/Arange-tun','_blank','noopener')">
+      <button class="btn-primary" onclick="window.open('https://github.com/mahdi-1991/CoCo-tunnel','_blank','noopener')">
         <svg class="ic" viewBox="0 0 24 24" style="width:16px;height:16px;display:inline;vertical-align:-3px;margin-right:6px"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 00-1-2.6c3-.3 6.5-1.5 6.5-7A5.4 5.4 0 0020 4.8 5 5 0 0019.9 1S18.7.6 16 2.5a13.4 13.4 0 00-7 0C6.3.6 5.1 1 5.1 1A5 5 0 005 4.8 5.4 5.4 0 003.5 8.5c0 5.5 3.5 6.7 6.5 7a3.4 3.4 0 00-1 2.6V22"/></svg>GitHub
       </button>
     </div>
@@ -2688,7 +2688,7 @@ applyLang(LANG);
     if(cached && Date.now()-cached.at < TTL){ show(cached.n); return; }
   }catch(e){}
   try{
-    const r=await fetch('https://api.github.com/repos/mahdi-byte64/Arange-tun',{headers:{Accept:'application/vnd.github+json'}});
+    const r=await fetch('https://api.github.com/repos/mahdi-1991/CoCo-tunnel',{headers:{Accept:'application/vnd.github+json'}});
     if(!r.ok) return;
     const n=(await r.json()).stargazers_count;
     if(typeof n!=='number') return;
@@ -2753,8 +2753,8 @@ function starNever(){ saveStarState(Object.assign({},starState(),{done:true})); 
 function starOnGitHub(){
   saveStarState(Object.assign({},starState(),{done:true}));
   closeStar();
-  window.open('https://github.com/mahdi-byte64/Arange-tun','_blank','noopener');
-  window.open('https://github.com/mahdi-byte64','_blank','noopener');
+  window.open('https://github.com/mahdi-1991/CoCo-tunnel','_blank','noopener');
+  window.open('https://github.com/mahdi-1991','_blank','noopener');
 }
 // After the first data has landed, so it never lands on an empty page.
 addEventListener('load',function(){ setTimeout(maybeAskForStar,4000); });

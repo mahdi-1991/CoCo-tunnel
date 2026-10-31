@@ -16,12 +16,12 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/mahdi-byte64/arange-tun/internal/app"
-	"github.com/mahdi-byte64/arange-tun/internal/manage"
-	"github.com/mahdi-byte64/arange-tun/internal/socks"
-	"github.com/mahdi-byte64/arange-tun/internal/telegram"
-	"github.com/mahdi-byte64/arange-tun/internal/tunhist"
-	"github.com/mahdi-byte64/arange-tun/internal/utils"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/app"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/manage"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/socks"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/telegram"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/tunhist"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/utils"
 	"github.com/sirupsen/logrus"
 )
 

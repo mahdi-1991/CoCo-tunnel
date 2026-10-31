@@ -9,15 +9,15 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/cmd"
-	"github.com/mahdi-byte64/arange-tun/internal/app"
-	"github.com/mahdi-byte64/arange-tun/internal/localproxy"
-	"github.com/mahdi-byte64/arange-tun/internal/manage"
-	"github.com/mahdi-byte64/arange-tun/internal/menu"
-	"github.com/mahdi-byte64/arange-tun/internal/monitor"
-	"github.com/mahdi-byte64/arange-tun/internal/telegram"
-	"github.com/mahdi-byte64/arange-tun/internal/utils"
-	"github.com/mahdi-byte64/arange-tun/internal/webui"
+	"github.com/mahdi-1991/CoCo-tunnel/cmd"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/app"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/localproxy"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/manage"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/menu"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/monitor"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/telegram"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/utils"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/webui"
 )
 
 var logger = utils.NewLogger("info")

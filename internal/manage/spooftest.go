@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/internal/spooftest"
-	"github.com/mahdi-byte64/arange-tun/internal/tui"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/spooftest"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/tui"
 )
 
 // SpoofTest is the interactive spoof-capability tester: it discovers which

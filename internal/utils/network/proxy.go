@@ -10,7 +10,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/internal/socks"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/socks"
 )
 
 // Reaching the tunnel server through a local proxy.

@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/internal/hedioum/engine/tunproto"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/hedioum/engine/tunproto"
 )
 
 // TestHandleUDPStreamRelay checks the egress relays a datagram to a target and

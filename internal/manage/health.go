@@ -3,8 +3,8 @@ package manage
 import (
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/internal/app"
-	"github.com/mahdi-byte64/arange-tun/internal/metrics"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/app"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/metrics"
 )
 
 // Health describes how a single tunnel is doing right now.

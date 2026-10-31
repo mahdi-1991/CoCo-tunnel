@@ -13,7 +13,7 @@ project's "no external tunnel binaries" rule.
 The upstream `internal/` tree was copied here verbatim, with only these edits:
 
 - Import paths rewritten from `paqet/internal/...` to
-  `github.com/mahdi-byte64/arange-tun/internal/packet/engine/...`.
+  `github.com/mahdi-1991/CoCo-tunnel/internal/packet/engine/...`.
 - Added `conf/prepare.go`: an exported `Prepare(*Conf)` that applies the same
   defaults and validation `LoadFromFile` runs, so the Arange-tun adapter
   (in the parent `internal/packet` package) can build the config in Go from its

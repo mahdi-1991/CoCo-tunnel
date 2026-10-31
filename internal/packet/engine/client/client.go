@@ -4,10 +4,10 @@ import (
 	"context"
 	"sync"
 
-	"github.com/mahdi-byte64/arange-tun/internal/packet/engine/conf"
-	"github.com/mahdi-byte64/arange-tun/internal/packet/engine/flog"
-	"github.com/mahdi-byte64/arange-tun/internal/packet/engine/pkg/iterator"
-	"github.com/mahdi-byte64/arange-tun/internal/packet/engine/tnet"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/packet/engine/conf"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/packet/engine/flog"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/packet/engine/pkg/iterator"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/packet/engine/tnet"
 )
 
 type Client struct {

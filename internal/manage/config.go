@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/mahdi-byte64/arange-tun/internal/app"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/app"
 )
 
 // TunnelSpec is the full description of a tunnel used to render a TOML config.

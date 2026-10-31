@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/mahdi-byte64/arange-tun/internal/app"
-	"github.com/mahdi-byte64/arange-tun/internal/localproxy"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/app"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/localproxy"
 )
 
 // The built-in-proxy service.

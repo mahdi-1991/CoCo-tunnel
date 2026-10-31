@@ -24,11 +24,11 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	appconfig "github.com/mahdi-byte64/arange-tun/config"
-	"github.com/mahdi-byte64/arange-tun/internal/hedioum/engine/config"
-	"github.com/mahdi-byte64/arange-tun/internal/hedioum/engine/egress"
-	"github.com/mahdi-byte64/arange-tun/internal/hedioum/engine/ingress"
-	"github.com/mahdi-byte64/arange-tun/internal/metrics"
+	appconfig "github.com/mahdi-1991/CoCo-tunnel/config"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/hedioum/engine/config"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/hedioum/engine/egress"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/hedioum/engine/ingress"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/metrics"
 )
 
 // RunForeign runs the abroad exit node until ctx ends.

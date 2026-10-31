@@ -13,8 +13,8 @@ const (
 
 	// RepoOwner/RepoName identify the GitHub repository used by the installer
 	// and the release-based updater.
-	RepoOwner = "mahdi-byte64"
-	RepoName  = "Arange-tun"
+	RepoOwner = "mahdi-1991"
+	RepoName  = "CoCo-tunnel"
 
 	// InstallDir is where the release bundle lives on the VPS.
 	InstallDir = "/root/Arange-tun"

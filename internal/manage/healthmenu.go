@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/mahdi-byte64/arange-tun/internal/tui"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/tui"
 )
 
 // HealthCheck runs every diagnostic and prints a grouped report with a ✓/!/✗

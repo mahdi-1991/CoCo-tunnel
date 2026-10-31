@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/mahdi-byte64/arange-tun/internal/client"
-	"github.com/mahdi-byte64/arange-tun/internal/server"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/client"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/server"
 )
 
 // The raw UDP transport was the one protocol with no end-to-end coverage: the

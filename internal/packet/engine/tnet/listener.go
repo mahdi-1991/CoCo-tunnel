@@ -3,7 +3,7 @@ package tnet
 import (
 	"net"
 
-	"github.com/mahdi-byte64/arange-tun/internal/packet/engine/conf"
+	"github.com/mahdi-1991/CoCo-tunnel/internal/packet/engine/conf"
 )
 
 type Listener interface {
